@@ -84,6 +84,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -98,4 +101,4 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-         script: 'cd /var/www/html && ./deployer.sh'
+        script: 'cd /var/www/html && ./deployer.sh'

@@ -18,8 +18,6 @@ jobs:
       with:
         php-version: '7.4'
     - uses: actions/checkout@v2.1.0
-      with:
-        fetch-depth: 2
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies

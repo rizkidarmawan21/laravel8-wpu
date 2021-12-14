@@ -43,7 +43,7 @@
 #         ftp-server: ${{ secrets.FTP_SERVER }}
 #         ftp-username: ${{ secrets.FTP_USERNAME }}
         # ftp-password: ${{ secrets.FTP_PASSWORD }}
-name: Publish Website to Web Hosting
+name: Laravel
 on:
   push:
     branches:
